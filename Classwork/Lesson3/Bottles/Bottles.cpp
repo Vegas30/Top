@@ -23,6 +23,8 @@ int main()
 
     totalAmount = (big_bottles_amount * big_bottles_cost) + (small_bottles_amount * small_bottles_cost);
 
+    long long totalAmountCents = static_cast<long long>(totalAmount * 100);
+
     // 1)
     // нужна библиотека #include <iomanip>
     // https://learn.microsoft.com/ru-ru/cpp/standard-library/iomanip?f1url=%3FappId%3DDev16IDEF1%26l%3DRU-RU%26k%3Dk(%253Ciomanip%253E)%3Bk(DevLang-C%252B%252B)%3Bk(TargetOS-Windows)%26rd%3Dtrue&view=msvc-170
@@ -36,9 +38,9 @@ int main()
     // 3)
     // #include <locale>
     // установлена локаль "en_US.UTF-8" с помощью std::locale, чтобы правильно отображать символы доллара и разделителя тысяч.
-    //
+    // При использовании std::put_money с десятичным значением типа double, функция предполагает, что переданное значение представляет сумму в центах, а не в долларах. Поэтому она автоматически делит значение на 100
     cout.imbue(locale("en_US.UTF-8"));  // Установка локали для правильного форматирования
-    cout << showbase << "Сумма к получению: " << put_money(totalAmount) << endl;
+    cout << showbase << "Сумма к получению: " << put_money(totalAmountCents) << endl;
 
     // 4)
     printf("\nСумма к получению: $%.2f\n", totalAmount);
