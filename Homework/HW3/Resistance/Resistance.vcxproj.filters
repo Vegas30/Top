@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HW3.cpp">
+    <ClCompile Include="Resistance.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
