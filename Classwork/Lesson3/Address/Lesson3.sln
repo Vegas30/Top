@@ -3,31 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Address", "Address.vcxproj", "{7024B90A-E804-42F0-A9BA-7A39B3C82B25}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1 Address", "Address.vcxproj", "{7024B90A-E804-42F0-A9BA-7A39B3C82B25}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Greetings", "..\Greetings\Greetings.vcxproj", "{0C7019BC-6C8D-4754-A0AD-7D7FFEA646E2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2 Greetings", "..\Greetings\Greetings.vcxproj", "{0C7019BC-6C8D-4754-A0AD-7D7FFEA646E2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Square", "..\Square\Square.vcxproj", "{31D02D26-995D-45D6-B792-050166D82667}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3 Square", "..\Square\Square.vcxproj", "{31D02D26-995D-45D6-B792-050166D82667}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Taxes and tips", "..\Taxes and tips\Taxes and tips.vcxproj", "{14994445-0BA5-460B-90C8-EBE6AFAF2ED9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6 Taxes and tips", "..\Taxes and tips\Taxes and tips.vcxproj", "{14994445-0BA5-460B-90C8-EBE6AFAF2ED9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GardenArea", "..\GardenArea\GardenArea.vcxproj", "{2854A31A-DC49-48C2-9C63-56FF53BA0907}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4 GardenArea", "..\GardenArea\GardenArea.vcxproj", "{2854A31A-DC49-48C2-9C63-56FF53BA0907}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bottles", "..\Bottles\Bottles.vcxproj", "{B9DAEEFB-79CD-4301-8CA5-A897248DA10F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5 Bottles", "..\Bottles\Bottles.vcxproj", "{B9DAEEFB-79CD-4301-8CA5-A897248DA10F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "..\Test\Test.vcxproj", "{358DBB6E-D8C4-4432-BDAC-15C234F9D705}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7 SouvenirsAndTrinkets", "..\SouvenirsAndTrinkets\SouvenirsAndTrinkets.vcxproj", "{84BEE13E-AE85-498C-86E3-C7F06A51C469}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DogAge", "..\DogAge\DogAge.vcxproj", "{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8 SlozhnyProtsent", "..\SlozhnyProtsent\SlozhnyProtsent.vcxproj", "{DAEF6956-03FE-4D28-A357-55EBE54320F3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SouvenirsAndTrinkets", "..\SouvenirsAndTrinkets\SouvenirsAndTrinkets.vcxproj", "{84BEE13E-AE85-498C-86E3-C7F06A51C469}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9 RashodTopliva", "..\RashodTopliva\RashodTopliva.vcxproj", "{2D067AA1-6627-4B8A-B31E-30291735DC06}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SlozhnyProtsent", "..\SlozhnyProtsent\SlozhnyProtsent.vcxproj", "{DAEF6956-03FE-4D28-A357-55EBE54320F3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10 RostFutov", "..\RostFutov\RostFutov.vcxproj", "{0DEA4326-8EA2-4C6E-B085-7BACB964AEB3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RashodTopliva", "..\RashodTopliva\RashodTopliva.vcxproj", "{2D067AA1-6627-4B8A-B31E-30291735DC06}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RostFutov", "..\RostFutov\RostFutov.vcxproj", "{0DEA4326-8EA2-4C6E-B085-7BACB964AEB3}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Distance", "..\Distance\Distance.vcxproj", "{A2AF1839-1398-4C0A-BB7C-FEE0E3E1AC87}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11 Distance", "..\Distance\Distance.vcxproj", "{A2AF1839-1398-4C0A-BB7C-FEE0E3E1AC87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,22 +81,6 @@ Global
 		{B9DAEEFB-79CD-4301-8CA5-A897248DA10F}.Release|x64.Build.0 = Release|x64
 		{B9DAEEFB-79CD-4301-8CA5-A897248DA10F}.Release|x86.ActiveCfg = Release|Win32
 		{B9DAEEFB-79CD-4301-8CA5-A897248DA10F}.Release|x86.Build.0 = Release|Win32
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Debug|x64.ActiveCfg = Debug|x64
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Debug|x64.Build.0 = Debug|x64
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Debug|x86.ActiveCfg = Debug|Win32
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Debug|x86.Build.0 = Debug|Win32
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Release|x64.ActiveCfg = Release|x64
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Release|x64.Build.0 = Release|x64
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Release|x86.ActiveCfg = Release|Win32
-		{358DBB6E-D8C4-4432-BDAC-15C234F9D705}.Release|x86.Build.0 = Release|Win32
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Debug|x64.ActiveCfg = Debug|x64
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Debug|x64.Build.0 = Debug|x64
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Debug|x86.ActiveCfg = Debug|Win32
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Debug|x86.Build.0 = Debug|Win32
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Release|x64.ActiveCfg = Release|x64
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Release|x64.Build.0 = Release|x64
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Release|x86.ActiveCfg = Release|Win32
-		{86AC076B-6D49-4A8B-A3BE-7058F4A45C6D}.Release|x86.Build.0 = Release|Win32
 		{84BEE13E-AE85-498C-86E3-C7F06A51C469}.Debug|x64.ActiveCfg = Debug|x64
 		{84BEE13E-AE85-498C-86E3-C7F06A51C469}.Debug|x64.Build.0 = Debug|x64
 		{84BEE13E-AE85-498C-86E3-C7F06A51C469}.Debug|x86.ActiveCfg = Debug|Win32

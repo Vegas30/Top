@@ -24,6 +24,7 @@
     <ProjectGuid>{a2af1839-1398-4c0a-bb7c-fee0e3e1ac87}</ProjectGuid>
     <RootNamespace>Distance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>11 Distance</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -24,6 +24,7 @@
     <ProjectGuid>{14994445-0ba5-460b-90c8-ebe6afaf2ed9}</ProjectGuid>
     <RootNamespace>Taxesandtips</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>6 Taxes and tips</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

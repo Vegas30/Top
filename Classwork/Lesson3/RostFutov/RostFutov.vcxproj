@@ -24,6 +24,7 @@
     <ProjectGuid>{0dea4326-8ea2-4c6e-b085-7bacb964aeb3}</ProjectGuid>
     <RootNamespace>RostFutov</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>10 RostFutov</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

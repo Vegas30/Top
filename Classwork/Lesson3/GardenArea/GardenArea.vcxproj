@@ -24,6 +24,7 @@
     <ProjectGuid>{2854a31a-dc49-48c2-9c63-56ff53ba0907}</ProjectGuid>
     <RootNamespace>GardenArea</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>4 GardenArea</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

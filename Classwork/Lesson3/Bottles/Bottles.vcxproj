@@ -24,6 +24,7 @@
     <ProjectGuid>{b9daeefb-79cd-4301-8ca5-a897248da10f}</ProjectGuid>
     <RootNamespace>Bottles</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>5 Bottles</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

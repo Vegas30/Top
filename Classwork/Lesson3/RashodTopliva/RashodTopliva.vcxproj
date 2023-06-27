@@ -24,6 +24,7 @@
     <ProjectGuid>{2d067aa1-6627-4b8a-b31e-30291735dc06}</ProjectGuid>
     <RootNamespace>RashodTopliva</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>9 RashodTopliva</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
