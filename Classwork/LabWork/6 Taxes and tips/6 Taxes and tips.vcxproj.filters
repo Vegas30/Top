@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OddEven.cpp">
+    <ClCompile Include="6 Taxes and tips.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
