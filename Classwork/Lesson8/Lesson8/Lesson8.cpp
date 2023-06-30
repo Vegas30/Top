@@ -35,17 +35,44 @@ int main()
 
 	//}
 
-	int don = 0;
-	int	hour = 0;
+	//int sum = 0;
+	//int	hour = 0;
 
-	for (int count = 0; count < 12; count++)
+	//for (int count = 0; count < 12; count++)
+	//{
+	//	hour++;
+	//	sum += hour;
+
+	//	cout << "Час: " << hour << endl;
+
+	//}
+	//cout << "Пробьют: " << sum << endl;
+
+
+	//int num, sum = 0;
+	//for (;;) // бесконечный цикл
+	//{
+	//	cin >> num;
+	//	sum += num;
+	//	if (num == 0) {
+	//		cout << sum << endl;
+	//		return 0;
+	//	}
+
+
+	//}
+
+	int num;
+	cin >> num;
+	for (int i = 0; i < 10; i++)
 	{
-		hour++;
-		don += hour;
-
-		cout << "Час: " << hour << endl;
-
+		
+		if (i % num == 0)
+		{
+			cout << i << endl;
+			
+		}
 	}
-	cout << "Пробьют: " << don << endl;
+
 
 }
