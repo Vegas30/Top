@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UgadaiFiguru", "UgadaiFigur
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DaysInMonth", "DaysInMonth\DaysInMonth.vcxproj", "{11B7C9B7-83BE-481B-8036-FB117E6CD884}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundVolume", "SoundVolume\SoundVolume.vcxproj", "{D269F65D-A4AE-4FEE-A55C-18B21F80286A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{11B7C9B7-83BE-481B-8036-FB117E6CD884}.Release|x64.Build.0 = Release|x64
 		{11B7C9B7-83BE-481B-8036-FB117E6CD884}.Release|x86.ActiveCfg = Release|Win32
 		{11B7C9B7-83BE-481B-8036-FB117E6CD884}.Release|x86.Build.0 = Release|Win32
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Debug|x64.ActiveCfg = Debug|x64
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Debug|x64.Build.0 = Debug|x64
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Debug|x86.Build.0 = Debug|Win32
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Release|x64.ActiveCfg = Release|x64
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Release|x64.Build.0 = Release|x64
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Release|x86.ActiveCfg = Release|Win32
+		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
