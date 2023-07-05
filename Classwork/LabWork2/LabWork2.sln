@@ -5,15 +5,21 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1 OddEwen", "1 OddEwen\1 OddEwen.vcxproj", "{2F2C399F-3F68-4090-90F6-5A9E84D626F1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DogAge", "DogAge\DogAge.vcxproj", "{FE2A08FA-0A9B-4ED7-A026-2018C2A768AD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2 DogAge", "DogAge\DogAge.vcxproj", "{FE2A08FA-0A9B-4ED7-A026-2018C2A768AD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GlasnSoglasn", "GlasnSoglasn\GlasnSoglasn.vcxproj", "{5331C7C7-C58B-45D8-8B29-46D51EB65680}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3 GlasnSoglasn", "GlasnSoglasn\GlasnSoglasn.vcxproj", "{5331C7C7-C58B-45D8-8B29-46D51EB65680}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UgadaiFiguru", "UgadaiFiguru\UgadaiFiguru.vcxproj", "{80B754B5-2574-4FEF-80AA-103F0E441A75}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4 UgadaiFiguru", "UgadaiFiguru\UgadaiFiguru.vcxproj", "{80B754B5-2574-4FEF-80AA-103F0E441A75}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DaysInMonth", "DaysInMonth\DaysInMonth.vcxproj", "{11B7C9B7-83BE-481B-8036-FB117E6CD884}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5 DaysInMonth", "DaysInMonth\DaysInMonth.vcxproj", "{11B7C9B7-83BE-481B-8036-FB117E6CD884}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundVolume", "SoundVolume\SoundVolume.vcxproj", "{D269F65D-A4AE-4FEE-A55C-18B21F80286A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6 SoundVolume", "SoundVolume\SoundVolume.vcxproj", "{D269F65D-A4AE-4FEE-A55C-18B21F80286A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7 TriangleTypes", "TriangleTypes\TriangleTypes.vcxproj", "{7FB6CB81-CEE1-483D-8696-04686B385A10}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8 NoteFrequency", "NoteFrequency\NoteFrequency.vcxproj", "{6C84377A-E546-4CF9-90D7-20B5BE7BF357}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9 NoteByFrequency", "NoteByFrequency\NoteByFrequency.vcxproj", "{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +77,30 @@ Global
 		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Release|x64.Build.0 = Release|x64
 		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Release|x86.ActiveCfg = Release|Win32
 		{D269F65D-A4AE-4FEE-A55C-18B21F80286A}.Release|x86.Build.0 = Release|Win32
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Debug|x64.ActiveCfg = Debug|x64
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Debug|x64.Build.0 = Debug|x64
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Debug|x86.ActiveCfg = Debug|Win32
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Debug|x86.Build.0 = Debug|Win32
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Release|x64.ActiveCfg = Release|x64
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Release|x64.Build.0 = Release|x64
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Release|x86.ActiveCfg = Release|Win32
+		{7FB6CB81-CEE1-483D-8696-04686B385A10}.Release|x86.Build.0 = Release|Win32
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Debug|x64.ActiveCfg = Debug|x64
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Debug|x64.Build.0 = Debug|x64
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Debug|x86.ActiveCfg = Debug|Win32
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Debug|x86.Build.0 = Debug|Win32
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Release|x64.ActiveCfg = Release|x64
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Release|x64.Build.0 = Release|x64
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Release|x86.ActiveCfg = Release|Win32
+		{6C84377A-E546-4CF9-90D7-20B5BE7BF357}.Release|x86.Build.0 = Release|Win32
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Debug|x64.ActiveCfg = Debug|x64
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Debug|x64.Build.0 = Debug|x64
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Debug|x86.ActiveCfg = Debug|Win32
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Debug|x86.Build.0 = Debug|Win32
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Release|x64.ActiveCfg = Release|x64
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Release|x64.Build.0 = Release|x64
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Release|x86.ActiveCfg = Release|Win32
+		{4A21DA9B-556A-47FA-82E6-F17F7BA77EAC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

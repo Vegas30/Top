@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{80b754b5-2574-4fef-80aa-103f0e441a75}</ProjectGuid>
-    <RootNamespace>UgadaiFiguru</RootNamespace>
+    <ProjectGuid>{7fb6cb81-cee1-483d-8696-04686b385a10}</ProjectGuid>
+    <RootNamespace>TriangleTypes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>4 UgadaiFiguru</ProjectName>
+    <ProjectName>7 TriangleTypes</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="UgadaiFiguru.cpp" />
+    <ClCompile Include="TriangleTypes.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
