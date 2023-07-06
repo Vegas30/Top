@@ -66,13 +66,14 @@ int main()
 	cin >> num;
 	for (int i = 0; i < 10; i++)
 	{
-		
+
 		if (i % num == 0)
 		{
 			cout << i << endl;
-			
+
 		}
 	}
 
+	
 
 }
