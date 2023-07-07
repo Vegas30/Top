@@ -56,15 +56,15 @@ int main()
 
 
 		//// Объявление массива строк
-		//std::string месяцы[] = { "Январь", "Февраль", "Март", "Апрель", "Май" };
+		//string месяцы[] = { "Январь", "Февраль", "Март", "Апрель", "Май" };
 
 		//// Получение размера массива
 		//int размер = sizeof(месяцы) / sizeof(месяцы[0]);
 
 		//// Вывод элементов массива
-		//std::cout << "Месяцы года:\n";
+		//cout << "Месяцы года:\n";
 		//for (int i = 0; i < размер; i++) {
-		//	std::cout << месяцы[i] << " ";
+		//	cout << месяцы[i] << " ";
 		//}
 
 	//int mark[3];
@@ -101,8 +101,8 @@ int main()
 		}
 	}
 
-	std::cout << "Minimum value: " << min_value << std::endl;
-	std::cout << "Maximum value: " << max_value << std::endl;
+	cout << "Minimum value: " << min_value << endl;
+	cout << "Maximum value: " << max_value << endl;
 
 	return 0;
 
