@@ -11,7 +11,7 @@ int main()
 	{
 		setlocale(LC_ALL, "Rus");
 
-		//srand(time(0));
+		srand(time(0));
 
 		//int a;
 
@@ -34,17 +34,92 @@ int main()
 		//cout << "8-random number = " << 1 + rand() % 3 << endl; // восьмой запуск генератора случайных чисел
 		//return 0;
 
-		int arr[10];
 
-		srand(time(NULL));
+		//int Matr[3][4]; // двумерный массив размером 3*4
+		//int i, j;
 
-		for (int i = 0; i < 10; i++)
+		//for (i = 0; i < 3; i++)
+		//	for (j = 0; j < 4; j++)
+		//		Matr[i][j] = 0;
+
+		//int arr[10];
+
+		//srand(time(NULL));
+
+		//for (int i = 0; i < 10; i++)
+		//{
+		//	arr[i] = rand() % 50; // элемент массива.
+		//	cout << arr[i] << endl;
+		//}
+
+
+
+		//const int row = 3;
+		//const int col = 4;
+
+		//int arr[][col];
+
+		//for (int i = 0; i < row; i++)
+		//{
+		//	for (int j = 0; j < col; j++)
+		//	{
+		//		arr[i][j] = rand() % 100;
+		//		cout << arr[i][j] <<" ";
+		//	}
+		//	cout << "\n\n";
+		//}
+		//system("pause");
+
+
+
+
+		const int row = 3;
+		const int col = 3;
+
+		int arr[row][col];
+
+		for (int i = 0; i < row; i++)
 		{
-			arr[i] = rand() % 50; // элемент массива.
-			cout << arr[i] << endl;
+			
+			for (int j = 0; j < col; j++)
+			{
+				arr[i][j] = rand() % 100;
+				cout << arr[i][j] << " ";
+			}
+			cout << "\n\n";
 		}
+
+		//int max = 0;
+		//for (int i = 0; i < row; i++)
+		//{
+		//	for (int j = 0; j < col; j++)
+		//	{
+		//		if (arr[i][j] > max)
+		//		{
+		//			max = arr[i][j];
+		//		}
+		//	}
+		//	cout << "Максимальное число " << i + 1 << "-ой строки: "<< max << endl;
+		//	max = 0;
+		//}
+
+		for (int i = 0; i < row; i++)
+		{
+			int max = arr[i][0];
+			for (int j = 1; j < col; j++)
+			{
+				if (arr[i][j] > max)
+				{
+					max = arr[i][j];
+				}
+			}
+			cout << "Максимальное число " << i + 1 << "-ой строки: "<< max << endl;
+		}
+
 
 		system("pause");
 	}
+
+
 
 }
