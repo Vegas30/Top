@@ -73,21 +73,21 @@ int main()
 
 
 
-		const int row = 3;
-		const int col = 3;
+		//const int row = 3;
+		//const int col = 3;
 
-		int arr[row][col];
+		//int arr[row][col];
 
-		for (int i = 0; i < row; i++)
-		{
-			
-			for (int j = 0; j < col; j++)
-			{
-				arr[i][j] = rand() % 100;
-				cout << arr[i][j] << " ";
-			}
-			cout << "\n\n";
-		}
+		//for (int i = 0; i < row; i++)
+		//{
+		//	
+		//	for (int j = 0; j < col; j++)
+		//	{
+		//		arr[i][j] = rand() % 100;
+		//		cout << arr[i][j] << " ";
+		//	}
+		//	cout << "\n\n";
+		//}
 
 		//int max = 0;
 		//for (int i = 0; i < row; i++)
@@ -103,18 +103,29 @@ int main()
 		//	max = 0;
 		//}
 
-		for (int i = 0; i < row; i++)
+		//for (int i = 0; i < row; i++)
+		//{
+		//	int max = arr[i][0];
+		//	for (int j = 1; j < col; j++)
+		//	{
+		//		if (arr[i][j] > max)
+		//		{
+		//			max = arr[i][j];
+		//		}
+		//	}
+		//	cout << "Максимальное число " << i + 1 << "-ой строки: "<< max << endl;
+		//}
+
+
+
+		int arr[]{5,5,5,5,5};
+		int arr_size = sizeof(arr) / sizeof(arr[0]);
+		for (int i = 0; i < arr_size; i++)
 		{
-			int max = arr[i][0];
-			for (int j = 1; j < col; j++)
-			{
-				if (arr[i][j] > max)
-				{
-					max = arr[i][j];
-				}
-			}
-			cout << "Максимальное число " << i + 1 << "-ой строки: "<< max << endl;
+ 			cout << arr[i] << "\t";
+
 		}
+
 
 
 		system("pause");
