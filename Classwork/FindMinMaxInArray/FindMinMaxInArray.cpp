@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 
+using namespace std;
+
 void findMinMax(int arr[], int size, int& minValue, int& minIndex, int& maxValue, int& maxIndex) {
     if (size <= 0) {
         std::cout << "Ошибка: передан пустой массив.\n";

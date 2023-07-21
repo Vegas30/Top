@@ -32,7 +32,7 @@ void rectangle(int height, int weidth)
 
 unsigned long long factorial(int n)
 {
-
+	
 
 	if (n == 0 || n == 1)
 	{
@@ -59,8 +59,22 @@ bool isPrime(int num) {
 	return true; // Нет делителей, число является простым
 }
 
-int cube(int number) {
+int cube(int number) 
+{
 	return number * number * number;
+}
+
+bool pozitivNegativ(int num)
+{
+	if (num > 0)
+	{
+
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
 }
 
 
@@ -68,7 +82,7 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 	
-	int height, width, n, num, num_cube;
+	int height, width, n, num, num_cube, num_pos;
 
 	// Запрашиваем у пользователя высоту и ширину прямоугольника
 	cout << "Введите высоту прямоугольника: ";
@@ -107,13 +121,31 @@ int main()
 	}
 
 
-	// Запрашиваем у пользователя число для вычисления куба числа
+	//// Запрашиваем у пользователя число для вычисления куба числа
+	//cout << "Введите число: ";
+	//cin >> num_cube;
+
+	//int result = cube(num_cube);
+
+	//cout << "Куб числа " << num_cube << " равен: " << result << "\n";
+
+
+	// истина лож
 	cout << "Введите число: ";
-	cin >> num_cube;
+	cin >> num_pos;
 
-	int result = cube(num_cube);
+	int result = pozitivNegativ(num_pos);
+	if (result == 1) 
+	{
+	cout << "Результат " << num_pos << " равен: " << result << " true "<< "\n";
+	
+	}
+	else
+	{
+	cout << "Результат " << num_pos << " равен: " << result << " false "<< "\n";
 
-	cout << "Куб числа " << num_cube << " равен: " << result << "\n";
+	}
+
 
 	return 0;
 }
