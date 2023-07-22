@@ -24,6 +24,7 @@
     <ProjectGuid>{2df444fe-53da-4431-b5e6-35604c7438ed}</ProjectGuid>
     <RootNamespace>Storehouse</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>5 Storehouse</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
