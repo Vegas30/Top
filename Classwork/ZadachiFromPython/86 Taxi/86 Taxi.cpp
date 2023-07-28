@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <cmath>
+#include <iomanip> 
 
 using namespace std;
 
@@ -30,7 +31,7 @@ int main()
 
     double totalFare = calculateTaxiFare(distanceInKilometers);
 
-    cout << "Итоговая сумма оплаты такси: $" << totalFare << endl;
+    cout << fixed << setprecision(2) << "Итоговая сумма оплаты такси: $" << totalFare << endl;
 
     return 0;
 
