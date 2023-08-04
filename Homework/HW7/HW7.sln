@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4 MakingDesigion", "MakingD
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5 Calendar", "Calendar\Calendar.vcxproj", "{9AF70EAF-7091-44D0-AB76-707C966638E3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SumOfIntegers", "SumOfIntegers\SumOfIntegers.vcxproj", "{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{9AF70EAF-7091-44D0-AB76-707C966638E3}.Release|x64.Build.0 = Release|x64
 		{9AF70EAF-7091-44D0-AB76-707C966638E3}.Release|x86.ActiveCfg = Release|Win32
 		{9AF70EAF-7091-44D0-AB76-707C966638E3}.Release|x86.Build.0 = Release|Win32
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Debug|x64.ActiveCfg = Debug|x64
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Debug|x64.Build.0 = Debug|x64
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Debug|x86.ActiveCfg = Debug|Win32
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Debug|x86.Build.0 = Debug|Win32
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Release|x64.ActiveCfg = Release|x64
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Release|x64.Build.0 = Release|x64
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Release|x86.ActiveCfg = Release|Win32
+		{7B954F15-0FE6-4D15-A2B0-B1AFA42F18B9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
