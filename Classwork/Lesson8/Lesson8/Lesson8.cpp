@@ -62,16 +62,22 @@ int main()
 
 	//}
 
-	int num;
-	cin >> num;
-	for (int i = 0; i < 10; i++)
+	//int num;
+	//cin >> num;
+	//for (int i = 0; i < 10; i++)
+	//{
+
+	//	if (i % num == 0)
+	//	{
+	//		cout << i << endl;
+
+	//	}
+	//}
+
+	for (int i = 0, j = 10; i < 10, j != 5; i++, j--)
 	{
-
-		if (i % num == 0)
-		{
-			cout << i << endl;
-
-		}
+		cout << "Переменная i = " << i << endl;
+		cout << "Переменная j = " << j << endl;
 	}
 
 	
