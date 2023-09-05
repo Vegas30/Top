@@ -24,6 +24,7 @@
     <ProjectGuid>{7b954f15-0fe6-4d15-a2b0-b1afa42f18b9}</ProjectGuid>
     <RootNamespace>SumOfIntegers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Ex1 SumOfIntegers</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
