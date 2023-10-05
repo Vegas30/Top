@@ -11,15 +11,34 @@ int main()
 	cout << "Успеваемость студента."
 		<< endl << endl;
 
-	// создание объекта с заданными значениями
-	Student student("Петров А.И.", 3,
-		new int[3]{ 10, 10, 9 });
+	// размер массива объектов
+	const int size = 2;
+	// создание и инициализация
+	// динамического массива объектов
+	Student* students = new Student[size]
+	{
+	{"Студент 1", 3, new int[3]{ 10, 10, 9 }},
+	{"Студент 2", 3, new int[3]{ 8, 10, 8 }}
+	};
+	// работа с массивом объектов
+	double sum = 0;
 
-
-	// выполнение метода объекта
-	cout << "Средний балл " << student.getName()
+	for (Student* stud = students;
+		stud < students + size; stud++)
+	{
+		double aver = stud->getAver();
+		cout << "Средний балл " << stud->getName()
+			<< " : " << fixed << setprecision(2)
+			<< aver << endl;
+		sum += aver;
+	}
+	cout << endl;
+	cout << "Средний балл по группе: "
 		<< " : " << fixed << setprecision(2)
-		<< student.getAver() << endl;
+		<< sum / size << endl;
+	delete[] students;
+
 	_getch();
 	return 0;
 }
+
