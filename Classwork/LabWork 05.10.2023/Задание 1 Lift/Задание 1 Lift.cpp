@@ -2,40 +2,77 @@
 //
 
 #include <iostream>
-using namespace std;
+#include <windows.h>
 
 class Lift
 {
 private:
-	int lowerFloor = 1;
-	int upperFloor = 5;
-	bool isOn;
-	bool isPower;
-	int currentFloorNumber;
-	int* floorRange;
-	
+	int lowerFloor;
+	int upperFloor;
+	bool isWorking;
+	int currentFloor;
+
 public:
-
-	Lift(const int* floorRange, );
-
-	 
-	void setFloorNumber(int floor)
+	// Конструктор для установки диапазона этажей и инициализации состояния лифта
+	Lift(int lower, int upper)
 	{
-		floorNumber = floor;
+		lowerFloor = lower;
+		upperFloor = upper;
+		isWorking = false;
+		currentFloor = lower;
 	}
 
-	void setOnOff(int sw)
+	// Метод для включения/выключения лифта
+	void togglePower()
 	{
-		isOn = sw;
+		isWorking = !isWorking;
 	}
 
+	// Метод для обработки вызова лифта на определенный этаж
+	void call(int floor)
+	{
+		if (isWorking && floor >= lowerFloor && floor <= upperFloor)
+		{
+			std::cout << "Лифт движется на этаж " << floor << std::endl;
+			currentFloor = floor;
+		}
+		else
+		{
+			std::cout << "Лифт не может приехать на этот этаж" << std::endl;
+		}
+	}
 
+	// Метод для возвращения текущего состояния лифта
+	bool getStatus() const
+	{
+		return isWorking;
+	}
 
+	// Метод для возвращения текущего положения лифта (этажа)
+	int getCurrentFloor() const
+	{
+		return currentFloor;
+	}
 };
-
 
 int main()
 {
+	setlocale(LC_ALL, "ru");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 
+	Lift lift(1, 10); // Создаем лифт, работающий с этажей с 1 по 10
 
+	std::cout << "Лифт включен? " << (lift.getStatus() ? "Да" : "Нет") << std::endl;
+
+	lift.togglePower(); // Включаем лифт
+
+	std::cout << "Лифт включен? " << (lift.getStatus() ? "Да" : "Нет") << std::endl;
+
+	lift.call(5); // Вызываем лифт на 5-й этаж
+
+	std::cout << "Лифт находится на этаже: " << lift.getCurrentFloor() << std::endl;
+
+	return 0;
 }
+

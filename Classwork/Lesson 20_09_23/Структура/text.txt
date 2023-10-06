@@ -1,0 +1,13 @@
+How to install (Add-on) :
+
+1 - Drag the 'mobm23' folder to mods (if you are using OpenIV ASI) \update\x64\dlcpacks\
+
+2 - Open 'OPENIV' in EDIT mode, then go to : mods ( if you using OpenIV ASI) \update\update.rpf\common\data
+
+3 - and add the following lines to the following lines in dlclist.xml file:
+
+dlcpacks:\mobm23\
+
+4 - Done!
+
+6 - Spawn by name using a trainer by typing: mobm23
