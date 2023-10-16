@@ -13,31 +13,35 @@
             }
 
             Console.WriteLine("Введите температуру: ");
-            double temptemperature = 0;
+            double temptemperature;
 
-            if (!double.TryParse(Console.ReadLine(), out temptemperature))
+            if (double.TryParse(Console.ReadLine(), out temptemperature))
+            {
+
+                switch (choice)
+                {
+                    case 1:
+                        //(0 °C × 9/5) + 32
+                        double tempFarengeit = (temptemperature * 9 / 5) + 32;
+                        Console.WriteLine($"Температура в Фаренгейтах: {tempFarengeit}");
+                        break;
+
+                    case 2:
+                        //5/9 (t °F - 32)
+                        double tempCelsius = (temptemperature - 32) * 5 / 9;
+                        Console.WriteLine($"Температура в градусах Цельсия: {tempCelsius}");
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            else
             {
                 Console.WriteLine("Неверный ввод. Пожалуйста, введите корректное число.");
             }
 
-
-            switch (choice)
-            {
-                case 1:
-                    //(0 °C × 9/5) + 32
-                    double tempFarengeit = (temptemperature * 9/5) + 32;
-                    Console.WriteLine($"Температура в Фаренгейтах: {tempFarengeit}");
-                    break;
-
-                case 2:
-                    //5/9 (t °F - 32)
-                    double tempCelsius = (temptemperature - 32) * 5/9;
-                    Console.WriteLine($"Температура в Фаренгейтах: {tempCelsius}");
-                    break;
-
-                default:
-                    break;
-            }
 
 
         }
