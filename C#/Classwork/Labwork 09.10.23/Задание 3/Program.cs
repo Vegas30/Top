@@ -4,28 +4,28 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ведите четыре числа: ");
 
-            string concatenatedNumber = "";
+            int[] digits = new int[4];
+            int result = 0;
 
-            // Считываем четыре цифры с клавиатуры и конкатенируем их в строку
+            Console.WriteLine("Введите четыре цифры от 0 до 9:");
+
             for (int i = 0; i < 4; i++)
             {
-                // Проверяем, что введенное значение - цифра
-                if (int.TryParse(Console.ReadLine(), out int digit) && digit >= 0 && digit <= 9)
+                Console.Write($"Цифра {i + 1}: ");
+
+                if (int.TryParse(Console.ReadLine(), out digits[i]) && digits[i] >= 0 && digits[i] <= 9)
                 {
-                    concatenatedNumber += digit; // Конкатенируем введенную цифру к строке
+                    result = result * 10 + digits[i];
                 }
                 else
                 {
-                    Console.WriteLine("Некорректный ввод. Пожалуйста, введите цифру.");
-                    // Если введено не число, уменьшаем счетчик, чтобы повторить попытку для текущей позиции
-                    i--;
+                    Console.WriteLine("Ошибка! Введите корректную цифру.");
+                    return;
                 }
             }
-            int number = int.Parse(concatenatedNumber);
 
-            Console.WriteLine($"Сформированное число: {number}");
+            Console.WriteLine($"Сформированное число: {result}");
 
         }
     }

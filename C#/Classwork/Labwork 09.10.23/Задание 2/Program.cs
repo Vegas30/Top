@@ -7,17 +7,18 @@
             Console.WriteLine("ВВедите число: ");
             double number = 0;
 
-            if (!double.TryParse(Console.ReadLine(), out number))
+            while (!double.TryParse(Console.ReadLine(), out number))
             {
                 Console.WriteLine("Неверный ввод. Пожалуйста, введите корректное число.");
             }
 
+            
             Console.WriteLine("Введите процент: ");
             double procent = 0;
 
-            if (!double.TryParse(Console.ReadLine(), out procent))
+            while (!double.TryParse(Console.ReadLine(), out procent) || procent < 0)
             {
-                Console.WriteLine("Неверный ввод. Пожалуйста, введите корректное число.");
+                Console.WriteLine("Неверный ввод. Пожалуйста, введите корректное положительное число.");
             }
 
             double result = (number * procent) / 100;

@@ -13,21 +13,26 @@
                     if (digit1 >= 1 && digit1 <= 6 && digit2 >= 1 && digit2 <= 6)
                     {
                         // Преобразуем число в строку для удобства работы с символами
-                        string numberString = number.ToString();
+                        // Разделяем число на цифры
+                        int[] digits = new int[6];
+                        for (int i = 5; i >= 0; i--)
+                        {
+                            digits[i] = number % 10;
+                            number /= 10;
+                        }
 
-                        // Индексы в строке начинаются с 0, поэтому уменьшаем номера разрядов на 1
-                        digit1--;
-                        digit2--;
+                        // Обмениваем цифры местами
+                        int temp = digits[digit1 - 1];
+                        digits[digit1 - 1] = digits[digit2 - 1];
+                        digits[digit2 - 1] = temp;
 
-                        // Обмен местами цифр
-                        char[] charArray = numberString.ToCharArray();
-                        char temp = charArray[digit1];
-                        charArray[digit1] = charArray[digit2];
-                        charArray[digit2] = temp;
+                        // Собираем число обратно из цифр
+                        int result = 0;
+                        for (int i = 0; i < 6; i++)
+                        {
+                            result = result * 10 + digits[i];
+                        }
 
-                        // Преобразуем обратно в число и выводим результат
-                        int result = int.Parse(new string(charArray));
-                        // int result = int.Parse (string.Join("", charArray)); // так тоже можно
                         Console.WriteLine($"Результат обмена: {result}");
                     }
                     else
