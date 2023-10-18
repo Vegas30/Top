@@ -22,9 +22,11 @@
                         }
 
                         // Обмениваем цифры местами
-                        int temp = digits[digit1 - 1];
+
+                        (digits[digit1 - 1], digits[digit2 - 1]) = (digits[digit2 - 1], digits[digit1 - 1]);
+/*                        int temp = digits[digit1 - 1];
                         digits[digit1 - 1] = digits[digit2 - 1];
-                        digits[digit2 - 1] = temp;
+                        digits[digit2 - 1] = temp;*/
 
                         // Собираем число обратно из цифр
                         int result = 0;

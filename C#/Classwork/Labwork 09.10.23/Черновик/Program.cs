@@ -7,7 +7,7 @@ internal class Program
         Console.WriteLine("Введите шестизначное число:");
         int number = 0;
 
-        while (!(int.TryParse(Console.ReadLine(), out number)) && number >= 100000 && number <= 999999)
+        while (!int.TryParse(Console.ReadLine(), out number) || !(number >= 100000 && number <= 999999))
         {
             Console.WriteLine("Введите шестизначное число."); 
         }
@@ -18,11 +18,11 @@ internal class Program
         Console.WriteLine("Введите номера разрядов для обмена (например, 1 и 6):");
         int firstDigit, secondDigit;
 
-        while (!int.TryParse(Console.ReadLine(), out firstDigit) && firstDigit >= 1 && firstDigit <= 6)
+        while (!int.TryParse(Console.ReadLine(), out firstDigit) && !(firstDigit >= 1 && firstDigit <= 6))
         {
             Console.WriteLine("Неверный ввод. Пожалуйста, введите целое число от 1 до 6.");
         }
-        while (!int.TryParse(Console.ReadLine(), out secondDigit) && secondDigit >= 1 && secondDigit <= 6)
+        while (!int.TryParse(Console.ReadLine(), out secondDigit) && !(secondDigit >= 1 && secondDigit <= 6))
         {
             Console.WriteLine("Неверный ввод. Пожалуйста, введите целое число от 1 до 6.");
         }
