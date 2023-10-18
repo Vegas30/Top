@@ -6,8 +6,8 @@ namespace Задание_4
     {
         static void Main(string[] args)
         {
-            int[] array1 = new int[5] { 1, 2, 3, 4, 5 };
-            int[] array2 = new int[4] { 1, 2, 3, 4 };
+            int[] array1 = new int[5] { 1, 2, 4, 4, 5 };
+            int[] array2 = new int[4] { 1, 2, 4, 4 };
 
             int maxLength = Math.Max(array1.Length, array2.Length);
 
