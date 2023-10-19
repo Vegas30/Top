@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static ArrayHelper.ArrayOperations;
 
 namespace Задание_4
 {
@@ -6,8 +6,62 @@ namespace Задание_4
     {
         static void Main(string[] args)
         {
-            int[] array1 = new int[5] { 1, 2, 4, 4, 5 };
-            int[] array2 = new int[4] { 1, 2, 4, 4 };
+            Console.Write(@"
+    Даны 2 массива размерности M и N соответственно.
+Необходимо переписать в третий массив общие элементы
+первых двух массивов без повторений.
+            " + "\n");
+
+            Console.WriteLine("Введите размер первого массива: ");
+            int size1;
+            while (!int.TryParse(Console.ReadLine(), out size1))
+            {
+                Console.WriteLine("Пфф... Введите целое положительное число.");
+            }
+
+            int[] array1 = new int[size1];
+
+            Console.WriteLine("Введите размер второго массива: ");
+            int size2;
+            while (!int.TryParse(Console.ReadLine(), out size2))
+            {
+                Console.WriteLine("Пфф... Введите целое положительное число.");
+            }
+
+            int[] array2 = new int[size2];
+
+            Console.WriteLine("\nВыберите способ заполнения массива, 1 или 2:\n1: Заполнить автоматически.\n2: Заполнить самостоятельно.");
+            int choice;
+            while (!int.TryParse(Console.ReadLine(), out choice) || !(choice == 1 || choice == 2))
+            {
+                Console.WriteLine("Выберите 1 или 2.");
+            }
+
+            switch (choice)
+            {
+                case 1:
+                    Console.Write("Первый ");
+                    FillArrayWithRandomNumbers(array1);
+                    ShowArray(array1);
+
+                    Console.Write("Второй ");
+                    FillArrayWithRandomNumbers(array2);
+                    ShowArray(array2);
+
+                    break;
+                case 2:
+                    Console.WriteLine("Первый: ");
+                    FillArrayManually(array1);
+                    ShowArray(array1);
+
+                    Console.WriteLine("Второй: ");
+                    FillArrayManually(array2);
+                    ShowArray(array2);
+                    
+                    break;
+                default:
+                    return;
+            }
 
             int maxLength = Math.Max(array1.Length, array2.Length);
 
@@ -25,13 +79,16 @@ namespace Задание_4
                     }
                 }
             }
-
-            Console.WriteLine("Общие элементы в двух массивах:");
+            
+            Console.Write("Общие элементы в двух массивах: ");
             for (int i = 0; i < count; i++)
             {
                 Console.Write(array3[i] + " ");
             }
-
+            if (count == 0) 
+            {
+                Console.WriteLine("0");
+            }
         }
     }
 }

@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            Console.Write(@"
+    Пользователь вводит с клавиатуры предложение. Приложение должно посчитать количество гласных букв в нём.
+            " + "\n");
+
             Console.WriteLine("Введите предложение:");
             string input = Console.ReadLine();
 

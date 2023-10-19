@@ -4,6 +4,15 @@
     {
         static void Main(string[] args)
         {
+            Console.Write(@"
+    Реализуйте приложение для подсчёта количество вхождений подстроки в строку. Пользователь вводит исходную
+строку и слово для поиска. Приложений отображает результат поиска.
+Например:
+пользователь ввёл: Why she had to go. I don't know, she wouldn't say;
+подстрока для поиска: she;
+результат поиска: 2.
+            " + "\n");
+
             Console.WriteLine("Введите предложение:");
             string inputSentence = Console.ReadLine();
 

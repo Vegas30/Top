@@ -1,16 +1,54 @@
-﻿namespace Задание_1
+﻿using static ArrayHelper.ArrayOperations;
+
+namespace Задание_1
 {
     internal class Program
     {
-        static void Main(string[] args)
+
+      
+        static void Main()
         {
-            int[] arr = { 1, 2, 3, 4, 3, 6, 3, 8, 3, 10 };
+            Console.Write(@"
+    Создайте приложение, которое отображает количество 
+четных, нечетных, уникальных элементов массива.
+            " + "\n");
+
+            Console.WriteLine("Введите размер массива: ");
+            int size;
+            while (!int.TryParse(Console.ReadLine(), out size))
+            {
+                Console.WriteLine("Пфф... Введите целое положительное число.");
+            }
+
+            int[] array = new int[size];
+
+            Console.WriteLine("\nВыберите способ заполнения массива, 1 или 2:\n1: Заполнить автоматически.\n2: Заполнить самостоятельно.");
+            int choice;
+            while (!int.TryParse(Console.ReadLine(), out choice) || !(choice == 1 || choice == 2))
+            {
+                Console.WriteLine("Выберите 1 или 2.");
+            }
+
+            switch (choice)
+            {
+                case 1:
+                    FillArrayWithRandomNumbers(array);
+                    ShowArray(array);
+                    break;
+                case 2:
+                    FillArrayManually(array);
+                    ShowArray(array);
+                    break;
+                default:
+                    return;
+            }
+
             int oddCount = 0;
             int evenCount = 0;
 
             int uniqCount = 0;
-            
-            foreach (int i in arr)
+
+            foreach (int i in array)
             {
                 if (i % 2 == 0)
                 {
@@ -21,12 +59,12 @@
                     evenCount++;
                 }
             }
-            for (int i = 0; i < arr.Length - 1; i++)
+            for (int i = 0; i < array.Length - 1; i++)
             {
                 int count = 0;
-                for (int j = i + 1; j < arr.Length -1; j++)
+                for (int j = i + 1; j < array.Length - 1; j++)
                 {
-                    if (arr[i] == arr[j] )
+                    if (array[i] == array[j])
                     {
                         count++;
                     }
@@ -37,11 +75,9 @@
                 }
             }
 
-            Console.WriteLine($"Количество четных: {oddCount}");
+            Console.WriteLine($"\nКоличество четных: {oddCount}");
             Console.WriteLine($"Количество нечетных: {evenCount}");
             Console.WriteLine($"Количество уникальных: {uniqCount}");
-
-
         }
     }
 }

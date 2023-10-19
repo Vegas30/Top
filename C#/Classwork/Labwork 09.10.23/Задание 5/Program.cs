@@ -4,6 +4,15 @@
     {
         static void Main(string[] args)
         {
+
+            Console.Write(
+@"  Пользователь вводит с клавиатуры дату. Приложе-
+ние должно отобразить название сезона и дня недели.
+Например, если введено 22.12.2021, приложение должно
+отобразить Winter Wednesday." + "\n\n");
+
+
+
             Console.WriteLine("Введите дату: ");
             string inputDate = Console.ReadLine();
 

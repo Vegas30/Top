@@ -4,53 +4,58 @@
     {
         static void Main(string[] args)
         {
+            Console.Write(
+@"  Пользователь вводит шестизначное число. После чего
+пользователь вводит номера разрядов для обмена цифр.
+Например, если пользователь ввёл один и шесть — это
+значит, что надо обменять местами первую и шестую
+цифры.
+Число 723895 должно превратиться в 523897.
+Если пользователь ввел не шестизначное число тре-
+буется вывести сообщение об ошибке." + "\n\n");
+
+
+
             Console.WriteLine("Введите шестизначное число:");
-            if (int.TryParse(Console.ReadLine(), out int number) && number >= 100000 && number <= 999999)
+            int number = 0;
+
+            while (!int.TryParse(Console.ReadLine(), out number) || !(number >= 100000 && number <= 999999))
             {
-                Console.WriteLine("Введите номера разрядов для обмена (например, 1 и 6):");
-                if (int.TryParse(Console.ReadLine(), out int digit1) && int.TryParse(Console.ReadLine(), out int digit2))
-                {
-                    if (digit1 >= 1 && digit1 <= 6 && digit2 >= 1 && digit2 <= 6)
-                    {
-                        // Преобразуем число в строку для удобства работы с символами
-                        // Разделяем число на цифры
-                        int[] digits = new int[6];
-                        for (int i = 5; i >= 0; i--)
-                        {
-                            digits[i] = number % 10;
-                            number /= 10;
-                        }
-
-                        // Обмениваем цифры местами
-
-                        (digits[digit1 - 1], digits[digit2 - 1]) = (digits[digit2 - 1], digits[digit1 - 1]);
-/*                        int temp = digits[digit1 - 1];
-                        digits[digit1 - 1] = digits[digit2 - 1];
-                        digits[digit2 - 1] = temp;*/
-
-                        // Собираем число обратно из цифр
-                        int result = 0;
-                        for (int i = 0; i < 6; i++)
-                        {
-                            result = result * 10 + digits[i];
-                        }
-
-                        Console.WriteLine($"Результат обмена: {result}");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Некорректные номера разрядов. Введите числа от 1 до 6.");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Некорректный ввод номеров разрядов.");
-                }
+                Console.WriteLine("Введите шестизначное число.");
             }
-            else
+
+            Console.WriteLine("Введите номера разрядов для обмена (например, 1 и 6):");
+            int firstDigit, secondDigit;
+
+            while (!int.TryParse(Console.ReadLine(), out firstDigit) || !(firstDigit >= 1 && firstDigit <= 6))
             {
-                Console.WriteLine("Ошибка. Введите шестизначное число.");
+                Console.WriteLine("Неверный ввод. Пожалуйста, введите целое число от 1 до 6.");
             }
+            while (!int.TryParse(Console.ReadLine(), out secondDigit) || !(secondDigit >= 1 && secondDigit <= 6))
+            {
+                Console.WriteLine("Неверный ввод. Пожалуйста, введите целое число от 1 до 6.");
+            }
+
+            // Разделяем число на цифры
+            int[] digits = new int[6];
+            for (int i = 5; i >= 0; i--)
+            {
+                digits[i] = number % 10;
+                number /= 10;
+            }
+
+            // Обмениваем цифры местами
+            (digits[firstDigit - 1], digits[secondDigit - 1]) = (digits[secondDigit - 1], digits[firstDigit - 1]);
+
+            // Собираем число обратно из цифр
+            int result = 0;
+            for (int i = 0; i < 6; i++)
+            {
+                result = result * 10 + digits[i];
+            }
+
+            Console.WriteLine($"Результат обмена: {result}");
+
         }
     }
 }

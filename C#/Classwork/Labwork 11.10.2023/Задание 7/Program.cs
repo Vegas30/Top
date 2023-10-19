@@ -4,6 +4,15 @@
     {
         static void Main(string[] args)
         {
+            Console.Write(@"
+    Пользователь вводит предложение с клавиатуры. Вам
+необходимо перевернуть каждое слово предложения и
+отобразить результат на экран.
+Например:
+пользователь ввёл: sun cat dogs cup tea;
+после переворота: nus tac sgod puc aet.
+            " + "\n");
+
             Console.WriteLine("Введите предложение:");
             string input = Console.ReadLine();
 
