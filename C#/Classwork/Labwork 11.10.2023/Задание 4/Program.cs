@@ -57,7 +57,7 @@ namespace Задание_4
                     Console.WriteLine("Второй: ");
                     FillArrayManually(array2);
                     ShowArray(array2);
-                    
+
                     break;
                 default:
                     return;
@@ -74,18 +74,68 @@ namespace Задание_4
                 {
                     if (array1[i] == array2[j])
                     {
-                        array3[count] = array1[i];
-                        count++;
+                        bool alreadyThere = false;
+                        for (int k = 0; k < count; k++)
+                        {
+
+                            if (array3[k] == array1[i])
+                            {
+                                alreadyThere = true;
+                                break;
+                            }
+                        }
+                        if (!alreadyThere)
+                        {
+                            array3[count] = array1[i];
+                            count++;
+                        }
+                        break;
                     }
                 }
             }
-            
+
+            /*
+             
+            int arr2[ROWS][COLS];
+
+  for (size_t i = 0; i < ROWS; i++)
+  {
+
+    for (size_t j = 0; j < COLS; )
+    {
+      int newNum = rand() % 100;
+      bool alreadyThere = false;
+
+      for (size_t row = 0; row < ROWS; row++)
+      {
+        for (size_t col = 0; col < COLS; col++)
+        {
+          if (newNum == arr2[row][col])
+          {
+            alreadyThere = true;
+            break;
+          }
+
+        }
+      }
+      if (!alreadyThere)
+      {
+        arr2[i][j] = newNum;
+        j++;
+      }
+    }
+  }
+             
+             */
+
+
+
             Console.Write("Общие элементы в двух массивах: ");
             for (int i = 0; i < count; i++)
             {
                 Console.Write(array3[i] + " ");
             }
-            if (count == 0) 
+            if (count == 0)
             {
                 Console.WriteLine("0");
             }
