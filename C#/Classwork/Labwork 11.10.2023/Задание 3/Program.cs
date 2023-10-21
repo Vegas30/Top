@@ -18,9 +18,19 @@ namespace Задание_3
 количество повторений последовательности: 3.
             " + "\n");
 
-            Console.WriteLine("Введите три числа");
-
-            string searchNumber = Console.ReadLine();
+            Console.WriteLine("Введите три числа, по очереди, нажимая enter после каждого: ");
+            string searchNumber = "";
+            int numCount = 0;
+            while (numCount < 3)
+            {
+                int numTemp;
+                if (!int.TryParse(Console.ReadLine(), out numTemp))
+                {
+                    Console.WriteLine("Пфф... Введите целое положительное число.");
+                }
+                searchNumber += numTemp;
+                numCount++;
+            }
 
             Console.WriteLine("Введите размер массива: ");
             int size;
