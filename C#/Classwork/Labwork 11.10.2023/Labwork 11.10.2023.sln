@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Задание 9 стара
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayHelper", "ArrayHelper\ArrayHelper.csproj", "{319CB751-B7C8-4F20-91FE-112F24A02CBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание 9", "Задание 9_2\Задание 9.csproj", "{D8133095-CCA4-43C3-8BC6-F4F34D4B4AAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Задание 9", "Задание 9_2\Задание 9.csproj", "{D8133095-CCA4-43C3-8BC6-F4F34D4B4AAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание 9 второй способ", "Задание 9 второй способ\Задание 9 второй способ.csproj", "{E93D120A-12F9-4CA7-9D40-004C3FC561BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{D8133095-CCA4-43C3-8BC6-F4F34D4B4AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8133095-CCA4-43C3-8BC6-F4F34D4B4AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8133095-CCA4-43C3-8BC6-F4F34D4B4AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93D120A-12F9-4CA7-9D40-004C3FC561BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93D120A-12F9-4CA7-9D40-004C3FC561BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93D120A-12F9-4CA7-9D40-004C3FC561BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93D120A-12F9-4CA7-9D40-004C3FC561BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
