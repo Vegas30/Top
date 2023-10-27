@@ -32,9 +32,9 @@ namespace LInq
                              select student;
 
             Console.WriteLine("Студенты с оценками больше 11:");
-            foreach (var stu in evenSearch)
+            foreach (var student in evenSearch)
             {
-                Console.WriteLine(stu);
+                Console.WriteLine(student);
             }
 
         }
