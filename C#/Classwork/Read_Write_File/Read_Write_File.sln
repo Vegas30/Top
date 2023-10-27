@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Read_Write_File", "Read_Write_File\Read_Write_File.csproj", "{C05C0036-E74B-468B-86F6-1F212A26022E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LInq", "LInq\LInq.csproj", "{454A3900-5DB7-434F-8E2C-703A43755B82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C05C0036-E74B-468B-86F6-1F212A26022E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05C0036-E74B-468B-86F6-1F212A26022E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05C0036-E74B-468B-86F6-1F212A26022E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05C0036-E74B-468B-86F6-1F212A26022E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454A3900-5DB7-434F-8E2C-703A43755B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454A3900-5DB7-434F-8E2C-703A43755B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454A3900-5DB7-434F-8E2C-703A43755B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454A3900-5DB7-434F-8E2C-703A43755B82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A7DE3C4-8444-48AD-961A-E7D21232C228}
+	EndGlobalSection
+EndGlobal
