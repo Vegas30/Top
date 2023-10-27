@@ -31,10 +31,12 @@ namespace LInq
                              where student.Ball >= 11
                              select student;
 
+
+
             Console.WriteLine("Студенты с оценками больше 11:");
             foreach (var student in evenSearch)
             {
-                Console.WriteLine(student);
+                Console.WriteLine(student.Name);
             }
 
         }
