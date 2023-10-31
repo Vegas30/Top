@@ -8,6 +8,12 @@
         private int areaCode;
         private string[] districts;
 
+        //
+        public City()
+        {
+
+        }
+
         // Конструктор класса
         public City(string cityName, string countryName, int population, int areaCode, string[] districts)
         {
@@ -69,7 +75,34 @@
             this.cityName = cityName;
         }
 
-        // Аналогично для других полей: countryName, population, areaCode, districts
+        public string GetCountryName()
+        {
+            return countryName;
+        }
+
+        public void SetCountryName(string cityName)
+        {
+            this.countryName = countryName;
+        }
+
+        public int GetPopulation()
+        {
+            return population;
+        }
+
+        public void SetAreaCode()
+        {
+            this.areaCode = areaCode;
+        }
+
+        public void GetDistricts()
+        {
+            for (int i = 0; i < districts.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {districts[i]}");
+            }
+            //return districts;
+        }
     }
 
     internal class Program
@@ -92,11 +125,13 @@
             // Вывод данных через метод класса
             myCity.DisplayData();
 
+
             // Ввод данных через метод класса
             myCity.InputData();
 
             // Вывод обновленных данных через метод класса
             myCity.DisplayData();
+
         }
     }
 }
