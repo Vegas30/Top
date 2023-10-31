@@ -19,9 +19,9 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTimePicker dtm = new DateTimePicker();
-            dtm.Show();
-            this.dateTimePicker1.DropDown += new System.EventHandler(this.button1_Click);
+            //DateTimePicker dtm = new DateTimePicker();
+           // dtm.Show();
+            dateTimePicker1.DropDown += new System.EventHandler(button1_Click);
 
             
         }

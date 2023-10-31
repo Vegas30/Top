@@ -157,9 +157,6 @@ namespace Exercise_07
                     return;
             }
 
-
-
-
             // Подсчитываем и выводим максимальный элемент
             int max = matrix.FindMaximum();
             Console.WriteLine($"Максимальный элемент в матрице: {max}");
