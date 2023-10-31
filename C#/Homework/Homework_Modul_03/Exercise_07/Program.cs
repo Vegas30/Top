@@ -1,4 +1,6 @@
-﻿namespace Exercise_07
+﻿using System;
+
+namespace Exercise_07
 {
     public class Matrix
     {
@@ -30,6 +32,18 @@
                 {
                     Console.Write($"Элемент [{i + 1},{j + 1}]: ");
                     data[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+        }
+
+        public void FillMatrixWithRandomNumbers()
+        {
+            Random random = new Random();
+            for (int i = 0; i < data.GetLength(0); i++)
+            {
+                for (int j = 0; j < data.GetLength(1); j++)
+                {
+                    data[i, j] = random.Next(1, 101); // заполняем случайными числами от 1 до 100
                 }
             }
         }
@@ -97,15 +111,54 @@
     {
         static void Main(string[] args)
         {
-            // Создаем матрицу 3x3
-            Matrix matrix = new Matrix(3, 3);
+            Console.Write(@"
+    Реализуйте класс «Матрица». Реализуйте конструкторы и методы класса для ввода данных, вывода данных,
+подсчёта максимума, подсчёта минимума.
+            " + "\n");
 
-            // Вводим данные в матрицу
-            matrix.InputData();
+            Console.WriteLine("Введите количество строк матрицы:");
+            int rows;
+            while (!int.TryParse(Console.ReadLine(), out rows))
+            {
+                Console.WriteLine("Вы ввели не целое число!");
+            }
 
-            // Выводим данные матрицы
-            Console.WriteLine("Введенная матрица:");
-            matrix.DisplayData();
+            Console.WriteLine("Введите количество столбцов матрицы:");
+            int cols;
+            while (!int.TryParse(Console.ReadLine(), out cols))
+            {
+                Console.WriteLine("Вы ввели не целое число!");
+            }
+
+            // Создаем матрицу
+            Matrix matrix = new Matrix(rows, cols);
+
+            Console.WriteLine("\nВыберите способ заполнения матрицы, 1 или 2:\n1: Заполнить автоматически.\n2: Заполнить самостоятельно.");
+            int choice;
+            while (!int.TryParse(Console.ReadLine(), out choice) || !(choice == 1 || choice == 2))
+            {
+                Console.WriteLine("Выберите 1 или 2.");
+            }
+
+            switch (choice)
+            {
+                case 1:
+                    matrix.FillMatrixWithRandomNumbers();
+                    matrix.DisplayData();
+                    break;
+                case 2:
+                    // Вводим данные в матрицу
+                    matrix.InputData();
+                    // Выводим данные матрицы
+                    Console.WriteLine("Введенная матрица:");
+                    matrix.DisplayData();
+                    break;
+                default:
+                    return;
+            }
+
+
+
 
             // Подсчитываем и выводим максимальный элемент
             int max = matrix.FindMaximum();
