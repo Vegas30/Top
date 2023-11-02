@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{6174F9A7-6BF3-40B5-AC39-4014BD81E5D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_01_Salary", "WindowsFormsApp1\Exercise_01_Salary.csproj", "{6174F9A7-6BF3-40B5-AC39-4014BD81E5D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp2", "WindowsFormsApp2\WindowsFormsApp2.csproj", "{6D2448D1-F772-4863-86E7-C34FC5C49241}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_02_Date", "WindowsFormsApp2\Exercise_02_Date.csproj", "{6D2448D1-F772-4863-86E7-C34FC5C49241}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp3", "WindowsFormsApp4\WindowsFormsApp3.csproj", "{13C8EB8D-5F53-441C-A3F6-D7F27FF4B9D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_03_GuessNum", "WindowsFormsApp4\Exercise_03_GuessNum.csproj", "{13C8EB8D-5F53-441C-A3F6-D7F27FF4B9D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp4", "WindowsFormsApp5\WindowsFormsApp4.csproj", "{7AEB5B89-4C68-4CD4-8626-D754A32B39EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_04_RedTrngl", "WindowsFormsApp5\Exercise_04_RedTrngl.csproj", "{7AEB5B89-4C68-4CD4-8626-D754A32B39EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

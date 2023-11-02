@@ -17,25 +17,16 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //DateTimePicker dtm = new DateTimePicker();
-           // dtm.Show();
-            dateTimePicker1.DropDown += new System.EventHandler(button1_Click);
 
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
             
+            label1.Text = "Выбранная дата: " + dateTimePicker1.Value.ToShortDateString();
+            //dateTimePicker1.Visible = true;
+            //dateTimePicker1.DropDown += this.Button1_Click;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            label1.Text = dateTimePicker1.Text;
-           // label1.Text = dateTimePicker1.Value.ToString();
-        }
-
-        private void Button_DataSelect_MouseClick(object sender, MouseEventArgs e)
-        {
-            label1.Text = dateTimePicker1.Text;
-        }
 
 
     }
