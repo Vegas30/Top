@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_4_DateCalculator",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_3_BMI", "Exercise_3_BMI\Exercise_3_BMI.csproj", "{A0792D06-9CC5-4980-94C4-06DD4E4FC317}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{523CC99E-9D76-4385-A4FF-2E41CD6CA978}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_2_PassGenerator", "WindowsFormsApp1\Exercise_2_PassGenerator.csproj", "{523CC99E-9D76-4385-A4FF-2E41CD6CA978}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
