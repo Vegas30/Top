@@ -94,7 +94,7 @@
             this.textBox_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_password.Location = new System.Drawing.Point(47, 157);
             this.textBox_password.Name = "textBox_password";
-            this.textBox_password.Size = new System.Drawing.Size(476, 29);
+            this.textBox_password.Size = new System.Drawing.Size(645, 29);
             this.textBox_password.TabIndex = 8;
             // 
             // checkBox_symbols
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 227);
+            this.ClientSize = new System.Drawing.Size(718, 227);
             this.Controls.Add(this.checkBox_symbols);
             this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.maskedTextBox_pass_length);

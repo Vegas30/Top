@@ -21,6 +21,7 @@ namespace DateCalculator
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -42,54 +43,83 @@ namespace DateCalculator
         private void button_Plus_Click(object sender, EventArgs e)
         {
             inputDate = DateTime.Parse(dateTimePicker1.Text);
+            button_Minus.Enabled = false;
             addSub = true;
         }
         private void button_Minus_Click(object sender, EventArgs e)
         {
             inputDate = DateTime.Parse(dateTimePicker1.Text);
+            button_Plus.Enabled = false;
             addSub = false;
         }
 
         private void button_Days_Click(object sender, EventArgs e)
         {
-            value = Convert.ToInt32(textBox2.Text);
-            if (addSub)
+            if (!int.TryParse(textBox2.Text, out value) || value < 0 || value == null)
             {
-                outputDate = inputDate.AddDays(value);
+                MessageBox.Show("Введите кол-во дней, месяцев или лет");
             }
-            else
+            if (value > 0)
             {
-                outputDate = inputDate.AddDays(-value);
+                if (addSub)
+                {
+                    outputDate = inputDate.AddDays(value);
+                }
+                else
+                {
+                    outputDate = inputDate.AddDays(-value);
+                }
+                textBox3.Text = outputDate.ToLongDateString();
+
             }
-            textBox3.Text = outputDate.ToLongDateString();
+            button_Plus.Enabled = true;
+            button_Minus.Enabled = true;
         }
 
         private void button_Months_Click(object sender, EventArgs e)
         {
-            value = Convert.ToInt32(textBox2.Text);
-            if (addSub)
+            if (!int.TryParse(textBox3.Text, out value) || value < 0 || value == null)
             {
-                outputDate = inputDate.AddMonths(value);
+                MessageBox.Show("Введите кол-во дней, месяцев или лет");
             }
-            else
+            if (value > 0)
             {
-                outputDate = inputDate.AddMonths(-value);
+                if (addSub)
+                {
+                    outputDate = inputDate.AddMonths(value);
+                }
+                else
+                {
+                    outputDate = inputDate.AddMonths(-value);
+                }
+                textBox3.Text = outputDate.ToLongDateString();
+
             }
-            textBox3.Text = outputDate.ToLongDateString();
+            button_Plus.Enabled = true;
+            button_Minus.Enabled = true;
         }
 
         private void button_Years_Click(object sender, EventArgs e)
         {
-            value = Convert.ToInt32(textBox2.Text);
-            if (addSub)
+            if (!int.TryParse(textBox3.Text, out value) || value < 0 || value == null)
             {
-                outputDate = inputDate.AddYears(value);
+                MessageBox.Show("Введите кол-во дней, месяцев или лет");
             }
-            else
+            if (value > 0)
             {
-                outputDate = inputDate.AddYears(-value);
+                if (addSub)
+                {
+                    outputDate = inputDate.AddYears(value);
+                }
+                else
+                {
+                    outputDate = inputDate.AddYears(-value);
+                }
+                textBox3.Text = outputDate.ToLongDateString();
+
             }
-            textBox3.Text = outputDate.ToLongDateString();
+            button_Plus.Enabled = true;
+            button_Minus.Enabled = true;
         }
 
     }
