@@ -31,7 +31,18 @@ namespace Exercise
             newEventDate = DateTime.Parse( dateTimePicker1.Text);
             TimeSpan left = newEventDate - today;
             label2.Visible = true;
+            if (left.Days < 0)
+            {
+                label2.Text = "Событие уже прошло " + left.Days + " дней назад";
+            }
+            else if (left.Days == 0)
+            {
+                label2.Text = "Событие сегодня ";
+            }
+            else
+            {
             label2.Text = "До события осталось " + left.Days + " дней";
+            }
         }
     }
 }
