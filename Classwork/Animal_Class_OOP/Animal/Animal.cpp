@@ -7,12 +7,13 @@
 class Animal {
 private:
     std::string name;
+    std::string food;
 
 public:
-    Animal(const std::string name) : name(name) {}
+    Animal(const std::string name, const std::string food) : name(name), food(food) {}
 
     virtual void makeSound() const {
-        //std::cout << "Some sound from an animal" << std::endl;
+       // std::cout << "Some sound from an animal" << std::endl;
     }
 
     void printName() {
@@ -22,7 +23,7 @@ public:
 
 class Cat : Animal {
 public:
-    Cat(const std::string name) : Animal(name) {}
+    Cat(const std::string name, const std::string food) : Animal(name, food) {}
 
     void makeSound() const override {
         std::cout << "meow" << std::endl;
@@ -31,20 +32,31 @@ public:
 
 class Dog : Animal {
 public:
-    Dog(const std::string name) : Animal(name) {}
+    Dog(const std::string name, const std::string food) : Animal(name, food) {}
 
     void makeSound() const override {
         std::cout << "woof" << std::endl;
     }
 };
 
+class Bird : Animal {
+public:
+    Bird(const std::string name, const std::string food) : Animal(name, food) {}
+
+    void makeSound() const override {
+        std::cout << "Twit-twit" << std::endl;
+    }
+};
+
 int main()
 {
-    Cat cat("Cat");
-    Dog dog("Buddy");
+    Cat cat("Cat","Fish");
+    Dog dog("Buddy","Meat");
+    Bird bird("Kanareik","Seed");
 
     cat.makeSound();
     dog.makeSound();
+    bird.makeSound();
 }
 
 
