@@ -78,7 +78,7 @@ namespace DateCalculator
 
         private void button_Months_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(textBox3.Text, out value) || value < 0 || value == null)
+            if (!int.TryParse(textBox2.Text, out value) || value < 0 || value == null)
             {
                 MessageBox.Show("Введите кол-во дней, месяцев или лет");
             }
@@ -101,7 +101,7 @@ namespace DateCalculator
 
         private void button_Years_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(textBox3.Text, out value) || value < 0 || value == null)
+            if (!int.TryParse(textBox2.Text, out value) || value < 0 || value == null)
             {
                 MessageBox.Show("Введите кол-во дней, месяцев или лет");
             }

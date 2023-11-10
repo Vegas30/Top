@@ -24,49 +24,56 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            length = int.Parse(maskedTextBox_pass_length.Text);
-
-            if (checkBox_symbols.Checked == false &&
-                checkBox_numbers.Checked == false &&
-                checkBox_spec_symbols.Checked == false)
+            if(!int.TryParse(maskedTextBox_pass_length.Text, out length) || !(length > 0 && length < 65))
             {
-                MessageBox.Show("Хотя бы один параметр должен быть выбран");
+                MessageBox.Show("Введите число от 1 до 64");
+            }
+            else
+            {
+
+                if (checkBox_symbols.Checked == false &&
+                    checkBox_numbers.Checked == false &&
+                    checkBox_spec_symbols.Checked == false)
+                {
+                    MessageBox.Show("Хотя бы один параметр должен быть выбран");
+                }
+
+                if (checkBox_symbols.Checked)
+                {
+                    includeLetters = true;
+                }
+                if (checkBox_numbers.Checked)
+                {
+                    includeNumbers = true;
+                }
+                if (checkBox_spec_symbols.Checked)
+                {
+                    includeSpecialSymbols = true;
+                }
+
+                string characters = "";
+                if (checkBox_symbols.Checked ||
+                    checkBox_numbers.Checked ||
+                    checkBox_spec_symbols.Checked)
+                {
+                    characters = GenerateCharacterString(includeLetters, includeNumbers, includeSpecialSymbols);
+
+                }
+                string password = "";
+
+                if (characters != "")
+                {
+                    password = GeneratePassword(length, characters);
+
+                }
+
+                textBox_password.Text = password;
+
+                includeLetters = false;
+                includeNumbers = false;
+                includeSpecialSymbols = false;
             }
 
-            if (checkBox_symbols.Checked)
-            {
-                includeLetters = true;
-            }
-            if (checkBox_numbers.Checked)
-            {
-                includeNumbers = true;
-            }
-            if (checkBox_spec_symbols.Checked)
-            {
-                includeSpecialSymbols = true;
-            }
-
-            string characters = "";
-            if (checkBox_symbols.Checked ||
-                checkBox_numbers.Checked ||
-                checkBox_spec_symbols.Checked)
-            {
-                characters = GenerateCharacterString(includeLetters, includeNumbers, includeSpecialSymbols);
-
-            }
-            string password = "";
-
-            if (characters != "")
-            {
-                password = GeneratePassword(length, characters);
-
-            }
-
-            textBox_password.Text = password;
-
-            includeLetters = false;
-            includeNumbers = false;
-            includeSpecialSymbols = false;
 
         }
         static string GenerateCharacterString(bool includeLetters, bool includeNumbers, bool includeSpecialSymbols)
