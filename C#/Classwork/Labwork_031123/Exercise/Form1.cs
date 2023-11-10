@@ -33,15 +33,15 @@ namespace Exercise
             label2.Visible = true;
             if (left.Days < 0)
             {
-                label2.Text = "Событие уже прошло " + left.Days + " дней назад";
+                label2.Text = "Событие уже прошло " + -left.Days + " дней назад " + -left.Hours + " часов";
             }
-            else if (left.Days == 0)
+            else if (left.Days == 0 && left.Hours < 0)
             {
-                label2.Text = "Событие сегодня ";
+                label2.Text = "Событие сегодня";
             }
             else
             {
-            label2.Text = "До события осталось " + left.Days + " дней";
+            label2.Text = "До события осталось " + left.Days + " дней " + left.Hours + " часов";
             }
         }
     }

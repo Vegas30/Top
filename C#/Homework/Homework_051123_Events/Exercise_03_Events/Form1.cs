@@ -21,13 +21,19 @@ namespace Exercise_03_Events
 
             timer.Tick += Timer_Tick;
 
-            timer.Interval = 2000;
+            timer.Interval = 1500;
         }
 
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
+            if (!Text.Contains("Ширина"))
+            {
+             
             this.Text = $"X = {e.X}, Y = {e.Y}";
+
+            }
+            
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -59,15 +65,17 @@ namespace Exercise_03_Events
             if (e.Button == MouseButtons.Right)
             {
                 string info = $" Ширина = {this.ClientSize.Width}, Высота = {this.ClientSize.Height}";
-                timer.Start();
                 this.Text += info;
+                timer.Start();
             }
         }
         private void Timer_Tick(object sender, EventArgs e)
         {
+            
             this.Text = "";
 
             timer.Stop();
+
         }
 
     }
