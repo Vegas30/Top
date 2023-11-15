@@ -12,7 +12,7 @@ namespace WindowsFormsApp
 {
     public partial class Form1 : Form
     {
-            Form2 form2 = new Form2();
+        private Form2 form2;
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +20,15 @@ namespace WindowsFormsApp
 
         protected void button1_Click(object sender, EventArgs e)
         {
-            form2.Show();
+            if (form2 == null || form2.IsDisposed)
+            {
+                form2 = new Form2();
+                form2.Show();
+            }
+            else
+            {
+                form2.Focus();
+            }
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -30,7 +38,7 @@ namespace WindowsFormsApp
 
         private void closeFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           form2.Close();
+            form2.Close();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
