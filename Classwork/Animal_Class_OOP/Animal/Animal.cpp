@@ -13,7 +13,7 @@ protected:
 public:
     Animal(const std::string name, int age, double weight) : name(name), age(age), weight(weight) {}
 
-    virtual void makeSound() const = 0;
+    virtual void makeSound() const = 0 ;
 
     virtual void displayInfo() const {
         std::cout << "Животное: " << name << ", Возраст: " << age << " лет, Вес: " << weight << " кг" << std::endl;
