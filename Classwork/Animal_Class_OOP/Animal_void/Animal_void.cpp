@@ -32,7 +32,6 @@ class Dog : public Animal {
 private:
 	std::string breed;
 
-
 public:
 	Dog(const std::string name, int age, double weight, const std::string breed) : Animal(name, age, weight), breed(breed) {}
 
@@ -48,8 +47,6 @@ public:
 	void calculateVaccineDose(double dose) override {
 		vaccineDose = weight * dose;
 	}
-
-
 };
 
 int main() {

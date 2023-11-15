@@ -30,9 +30,10 @@ public:
 class Dog : public Animal {
 private:
     std::string breed;
+    double dose = 0.0;
 
 public:
-    Dog(const std::string& name, int age, double weight, const std::string& breed) : Animal(name, age, weight), breed(breed) {}
+    Dog(const std::string name, int age, double weight, const std::string breed, double dose) : Animal(name, age, weight), breed(breed), dose(dose) {}
 
     void makeSound() const override {
         std::cout << "Гав-гав!" << std::endl;
@@ -44,16 +45,14 @@ public:
     }
 
     void calculateVaccineDose(Animal& animal) override {
-        vaccineDose = weight * 0.05;
-
-
+        vaccineDose = weight * dose;
     }
 };
 
 int main() {
     setlocale(LC_ALL, "ru");
 
-    Dog dog("Барон", 3, 15.0, "Лабрадор");
+    Dog dog("Барон", 3, 15.0, "Лабрадор", 0.05);
 
     std::cout << "Информация о собаке:" << std::endl;
     std::cout << "-------------------------" << std::endl;
