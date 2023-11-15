@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Class_Animal.cpp">
+    <ClCompile Include="Animal_Ref.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
