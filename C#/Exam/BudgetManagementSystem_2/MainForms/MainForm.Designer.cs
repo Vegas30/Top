@@ -1,0 +1,189 @@
+﻿using System.Windows.Forms;
+
+namespace MainForms
+{
+    partial class MainForm
+    {
+        /// <summary>
+        /// Обязательная переменная конструктора.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Освободить все используемые ресурсы.
+        /// </summary>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Код, автоматически созданный конструктором форм Windows
+
+        /// <summary>
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.amountTextBox = new System.Windows.Forms.TextBox();
+            this.categoryComboBox = new System.Windows.Forms.ComboBox();
+            this.incomeRadioButton = new System.Windows.Forms.RadioButton();
+            this.transactionsGridView = new System.Windows.Forms.DataGridView();
+            this.descriptionColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addTransactionButton = new System.Windows.Forms.Button();
+            this.expenseRadioButton = new System.Windows.Forms.RadioButton();
+            this.newCategoryButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsGridView)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.Location = new System.Drawing.Point(13, 13);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.descriptionTextBox.TabIndex = 0;
+            // 
+            // amountTextBox
+            // 
+            this.amountTextBox.Location = new System.Drawing.Point(13, 40);
+            this.amountTextBox.Name = "amountTextBox";
+            this.amountTextBox.Size = new System.Drawing.Size(100, 20);
+            this.amountTextBox.TabIndex = 1;
+            // 
+            // categoryComboBox
+            // 
+            this.categoryComboBox.FormattingEnabled = true;
+            this.categoryComboBox.Location = new System.Drawing.Point(13, 67);
+            this.categoryComboBox.Name = "categoryComboBox";
+            this.categoryComboBox.Size = new System.Drawing.Size(121, 21);
+            this.categoryComboBox.TabIndex = 2;
+            // 
+            // incomeRadioButton
+            // 
+            this.incomeRadioButton.AutoSize = true;
+            this.incomeRadioButton.Location = new System.Drawing.Point(13, 95);
+            this.incomeRadioButton.Name = "incomeRadioButton";
+            this.incomeRadioButton.Size = new System.Drawing.Size(57, 17);
+            this.incomeRadioButton.TabIndex = 3;
+            this.incomeRadioButton.TabStop = true;
+            this.incomeRadioButton.Text = "Доход";
+            this.incomeRadioButton.UseVisualStyleBackColor = true;
+            this.incomeRadioButton.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            // 
+            // transactionsGridView
+            // 
+            this.transactionsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.transactionsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.descriptionColumn,
+            this.amountColumn,
+            this.categoryColumn,
+            this.typeColumn});
+            this.transactionsGridView.Location = new System.Drawing.Point(325, 13);
+            this.transactionsGridView.Name = "transactionsGridView";
+            this.transactionsGridView.Size = new System.Drawing.Size(463, 409);
+            this.transactionsGridView.TabIndex = 4;
+            // 
+            // descriptionColumn
+            // 
+            this.descriptionColumn.DataPropertyName = "Description";
+            this.descriptionColumn.HeaderText = "Описание";
+            this.descriptionColumn.Name = "descriptionColumn";
+            // 
+            // amountColumn
+            // 
+            this.amountColumn.DataPropertyName = "Amount";
+            this.amountColumn.HeaderText = "Сумма";
+            this.amountColumn.Name = "amountColumn";
+            // 
+            // categoryColumn
+            // 
+            this.categoryColumn.DataPropertyName = "Category.Name";
+            this.categoryColumn.HeaderText = "Категория";
+            this.categoryColumn.Name = "categoryColumn";
+            this.categoryColumn.ReadOnly = true;
+            // 
+            // typeColumn
+            // 
+            this.typeColumn.DataPropertyName = "Type";
+            this.typeColumn.HeaderText = "Тип";
+            this.typeColumn.Name = "typeColumn";
+            // 
+            // addTransactionButton
+            // 
+            this.addTransactionButton.Location = new System.Drawing.Point(13, 139);
+            this.addTransactionButton.Name = "addTransactionButton";
+            this.addTransactionButton.Size = new System.Drawing.Size(75, 23);
+            this.addTransactionButton.TabIndex = 5;
+            this.addTransactionButton.Text = "button1";
+            this.addTransactionButton.UseVisualStyleBackColor = true;
+            this.addTransactionButton.Click += new System.EventHandler(this.addTransactionButton_Click);
+            // 
+            // expenseRadioButton
+            // 
+            this.expenseRadioButton.AutoSize = true;
+            this.expenseRadioButton.Location = new System.Drawing.Point(13, 116);
+            this.expenseRadioButton.Name = "expenseRadioButton";
+            this.expenseRadioButton.Size = new System.Drawing.Size(61, 17);
+            this.expenseRadioButton.TabIndex = 6;
+            this.expenseRadioButton.TabStop = true;
+            this.expenseRadioButton.Text = "Расход";
+            this.expenseRadioButton.UseVisualStyleBackColor = true;
+            this.expenseRadioButton.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            // 
+            // newCategoryButton
+            // 
+            this.newCategoryButton.Location = new System.Drawing.Point(140, 67);
+            this.newCategoryButton.Name = "newCategoryButton";
+            this.newCategoryButton.Size = new System.Drawing.Size(75, 23);
+            this.newCategoryButton.TabIndex = 7;
+            this.newCategoryButton.Text = "Категории";
+            this.newCategoryButton.UseVisualStyleBackColor = true;
+            this.newCategoryButton.Click += new System.EventHandler(this.newCategoryButton_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.newCategoryButton);
+            this.Controls.Add(this.expenseRadioButton);
+            this.Controls.Add(this.addTransactionButton);
+            this.Controls.Add(this.transactionsGridView);
+            this.Controls.Add(this.incomeRadioButton);
+            this.Controls.Add(this.categoryComboBox);
+            this.Controls.Add(this.amountTextBox);
+            this.Controls.Add(this.descriptionTextBox);
+            this.Name = "MainForm";
+            this.Text = "BudgetManagementSystem V2";
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsGridView)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox descriptionTextBox;
+        private System.Windows.Forms.TextBox amountTextBox;
+        private System.Windows.Forms.ComboBox categoryComboBox;
+        private System.Windows.Forms.RadioButton incomeRadioButton;
+        private System.Windows.Forms.DataGridView transactionsGridView;
+        private System.Windows.Forms.Button addTransactionButton;
+        private System.Windows.Forms.RadioButton expenseRadioButton;
+        private DataGridViewTextBoxColumn descriptionColumn;
+        private DataGridViewTextBoxColumn amountColumn;
+        private DataGridViewTextBoxColumn categoryColumn;
+        private DataGridViewTextBoxColumn typeColumn;
+        private Button newCategoryButton;
+    }
+}
+
