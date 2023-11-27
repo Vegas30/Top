@@ -82,7 +82,6 @@ namespace MainForms
             this.incomeRadioButton.TabStop = true;
             this.incomeRadioButton.Text = "Доход";
             this.incomeRadioButton.UseVisualStyleBackColor = true;
-            this.incomeRadioButton.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // transactionsGridView
             // 
@@ -142,7 +141,6 @@ namespace MainForms
             this.expenseRadioButton.TabStop = true;
             this.expenseRadioButton.Text = "Расход";
             this.expenseRadioButton.UseVisualStyleBackColor = true;
-            this.expenseRadioButton.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // newCategoryButton
             // 

@@ -123,22 +123,7 @@ namespace MainForms
 
             balanceValueTextBox.Text = currentBalance.ToString();
         }
-        private void radioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            RadioButton radioButton = sender as RadioButton;
-            if (radioButton != null && radioButton.Checked)
-            {
-                if (radioButton == incomeRadioButton)
-                {
-                    // Логика для выбора типа "Доход"
-                    
-                }
-                else if (radioButton == expenseRadioButton)
-                {
-                    // Логика для выбора типа "Расход"
-                }
-            }
-        }
+
 
         private void newCategoryButton_Click(object sender, EventArgs e)
         {
