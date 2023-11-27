@@ -67,6 +67,7 @@
             this.deleteCategoryButton.TabIndex = 3;
             this.deleteCategoryButton.Text = "Удалить";
             this.deleteCategoryButton.UseVisualStyleBackColor = true;
+            this.deleteCategoryButton.Click += new System.EventHandler(this.deleteCategoryButton_Click);
             // 
             // ManageCategoriesForm
             // 

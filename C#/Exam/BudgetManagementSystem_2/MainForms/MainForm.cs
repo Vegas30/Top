@@ -14,6 +14,9 @@ namespace MainForms
     {
         private List<Transaction> transactions;
         private List<Category> categories;
+        decimal currentBalance = 0;
+        
+
         public MainForm()
         {
             InitializeComponent();
@@ -38,17 +41,55 @@ namespace MainForms
         private void addTransactionButton_Click(object sender, EventArgs e)
         {
             // Получение данных о транзакции из пользовательского ввода.
-            string description = descriptionTextBox.Text;
+            string description = "";
+            if (string.IsNullOrWhiteSpace(descriptionTextBox.Text))
+            {
+                MessageBox.Show("Введите корректное описание !", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                description = descriptionTextBox.Text;
+            }
             decimal amount = decimal.Parse(amountTextBox.Text);
+            if (!decimal.TryParse(amountTextBox.Text, out amount))
+            {
+                MessageBox.Show("Введите корректную сумму транзакции!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (categoryComboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Выберите категорию!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Category selectedCategory = categories[categoryComboBox.SelectedIndex];
-            TransactionType type = incomeRadioButton.Checked ? TransactionType.Income : TransactionType.Expense;
+
+            TransactionType type;
+
+            if (incomeRadioButton.Checked)
+            {
+                type = TransactionType.Income;
+            }
+            else if (expenseRadioButton.Checked)
+            {
+                type = TransactionType.Expense;
+            }
+            else
+            {
+                // Если ни один из RadioButton не выбран
+                MessageBox.Show("Выберите тип транзакции, Доход или Расход", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             // Создание новой транзакции.
             Transaction newTransaction = new Transaction(description, amount, selectedCategory, type);
 
             // Добавление транзакции в список и отображение в таблице.
             transactions.Add(newTransaction);
+            
             UpdateTransactionsGridView();
+            UpdeteCurrentBalance();
         }
 
         private void UpdateTransactionsGridView()
@@ -62,6 +103,26 @@ namespace MainForms
                 transactionsGridView.Rows.Add(transaction.Description, transaction.Amount, transaction.Category.Name, transaction.Type);
             }
         }
+
+        private void UpdeteCurrentBalance()
+        {
+            balanceValueTextBox.Text = string.Empty;
+            currentBalance = 0;
+            foreach (var transaction in transactions)
+            {
+                if (transaction.Type == TransactionType.Income)
+                {
+                currentBalance += transaction.Amount;
+                }
+                if(transaction.Type == TransactionType.Expense)
+                {
+                    currentBalance -= transaction.Amount; 
+                }
+
+            }
+
+            balanceValueTextBox.Text = currentBalance.ToString();
+        }
         private void radioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton radioButton = sender as RadioButton;
@@ -70,6 +131,7 @@ namespace MainForms
                 if (radioButton == incomeRadioButton)
                 {
                     // Логика для выбора типа "Доход"
+                    
                 }
                 else if (radioButton == expenseRadioButton)
                 {
@@ -82,6 +144,13 @@ namespace MainForms
         {
             ManageCategoriesForm manageCategoriesForm = new ManageCategoriesForm(categories);
             manageCategoriesForm.ShowDialog();
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            descriptionTextBox.Text = string.Empty;
+            amountTextBox.Text = string.Empty;
+            categoryComboBox.Text = string.Empty;
         }
     }
 

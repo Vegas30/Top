@@ -1,44 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MainForms
 {
     public partial class ManageCategoriesForm : Form
     {
+        private List<Category> categories;
         //private ListBox categoriesListBox;
         //private TextBox newCategoryTextBox;
-       // private Button addCategoryButton;
+        // private Button addCategoryButton;
         //private Button deleteCategoryButton;
 
         public ManageCategoriesForm(List<Category> categories)
         {
+            this.categories = categories;
             InitializeComponent();
 
             foreach (var category in categories)
             {
                 this.categoriesListBox.Items.Add(category.Name);
             }
-        }
-
-        // Метод для обработки добавления новой категории
-        private void AddCategory()
-        {
-            // Логика добавления новой категории
-            // ...
-        }
-
-        // Метод для обработки удаления выбранной категории
-        private void DeleteCategory()
-        {
-            // Логика удаления выбранной категории
-            // ...
         }
 
         private void addCategoryButton_Click(object sender, EventArgs e)
@@ -66,6 +49,25 @@ namespace MainForms
             }
 
             newCategoryTextBox.Clear(); // Очистка TextBox после добавления категории
+        }
+
+        private void deleteCategoryButton_Click(object sender, EventArgs e)
+        {
+            if (categoriesListBox.SelectedIndex != -1)
+            {
+                string selectedCategory = categoriesListBox.SelectedItem.ToString();
+
+                Category categoryToRemove = categories.FirstOrDefault(category => category.Name == selectedCategory);
+                if (categoryToRemove != null)
+                {
+                    categories.Remove(categoryToRemove);
+                    categoriesListBox.Items.RemoveAt(categoriesListBox.SelectedIndex);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите категорию для удаления!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
