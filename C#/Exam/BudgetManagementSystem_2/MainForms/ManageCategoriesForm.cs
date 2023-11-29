@@ -8,10 +8,6 @@ namespace MainForms
     public partial class ManageCategoriesForm : Form
     {
         private List<Category> categories;
-        //private ListBox categoriesListBox;
-        //private TextBox newCategoryTextBox;
-        // private Button addCategoryButton;
-        //private Button deleteCategoryButton;
 
         public ManageCategoriesForm(List<Category> categories)
         {
