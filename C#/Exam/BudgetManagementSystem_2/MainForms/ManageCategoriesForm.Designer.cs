@@ -39,14 +39,14 @@
             this.categoriesListBox.FormattingEnabled = true;
             this.categoriesListBox.Location = new System.Drawing.Point(13, 13);
             this.categoriesListBox.Name = "categoriesListBox";
-            this.categoriesListBox.Size = new System.Drawing.Size(120, 95);
+            this.categoriesListBox.Size = new System.Drawing.Size(315, 95);
             this.categoriesListBox.TabIndex = 0;
             // 
             // newCategoryTextBox
             // 
             this.newCategoryTextBox.Location = new System.Drawing.Point(13, 115);
             this.newCategoryTextBox.Name = "newCategoryTextBox";
-            this.newCategoryTextBox.Size = new System.Drawing.Size(100, 20);
+            this.newCategoryTextBox.Size = new System.Drawing.Size(315, 20);
             this.newCategoryTextBox.TabIndex = 1;
             // 
             // addCategoryButton
@@ -73,13 +73,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(365, 433);
             this.Controls.Add(this.deleteCategoryButton);
             this.Controls.Add(this.addCategoryButton);
             this.Controls.Add(this.newCategoryTextBox);
             this.Controls.Add(this.categoriesListBox);
             this.Name = "ManageCategoriesForm";
-            this.Text = "ManageCategoriesForm";
+            this.Text = "Управление категориями";
             this.ResumeLayout(false);
             this.PerformLayout();
 

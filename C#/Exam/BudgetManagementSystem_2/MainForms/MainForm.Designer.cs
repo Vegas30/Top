@@ -85,6 +85,7 @@ namespace MainForms
             // 
             // transactionsGridView
             // 
+            this.transactionsGridView.AllowUserToAddRows = false;
             this.transactionsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.transactionsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.descriptionColumn,
@@ -93,6 +94,7 @@ namespace MainForms
             this.typeColumn});
             this.transactionsGridView.Location = new System.Drawing.Point(325, 13);
             this.transactionsGridView.Name = "transactionsGridView";
+            this.transactionsGridView.ReadOnly = true;
             this.transactionsGridView.Size = new System.Drawing.Size(463, 409);
             this.transactionsGridView.TabIndex = 4;
             // 
@@ -101,12 +103,14 @@ namespace MainForms
             this.descriptionColumn.DataPropertyName = "Description";
             this.descriptionColumn.HeaderText = "Описание";
             this.descriptionColumn.Name = "descriptionColumn";
+            this.descriptionColumn.ReadOnly = true;
             // 
             // amountColumn
             // 
             this.amountColumn.DataPropertyName = "Amount";
             this.amountColumn.HeaderText = "Сумма";
             this.amountColumn.Name = "amountColumn";
+            this.amountColumn.ReadOnly = true;
             // 
             // categoryColumn
             // 
@@ -120,6 +124,7 @@ namespace MainForms
             this.typeColumn.DataPropertyName = "Type";
             this.typeColumn.HeaderText = "Тип";
             this.typeColumn.Name = "typeColumn";
+            this.typeColumn.ReadOnly = true;
             // 
             // addTransactionButton
             // 

@@ -21,14 +21,12 @@ namespace MainForms
         {
             InitializeComponent();
 
-            // Инициализация списка транзакций и категорий (можно загрузить из базы данных или другого источника).
             transactions = new List<Transaction>();
             categories = new List<Category>
             {
                 new Category("Еда"),
                 new Category("Транспорт"),
                 new Category("Зарплата"),
-                // Добавьте другие категории по необходимости.
             };
 
             // Заполнение выпадающего списка категорий.

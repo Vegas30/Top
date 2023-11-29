@@ -1,0 +1,56 @@
+@startuml Budget Managment System v2
+left to right direction
+actor "Пользователь" as user #white
+
+usecase "Добавить транзакцию" as AddTransaction #white
+usecase "Посмотреть транзакцию" as ViewTransactions #white
+usecase "Удалить транзакцию" as DeleteTransaction #white
+
+user --> AddTransaction
+user --> ViewTransactions
+user --> DeleteTransaction
+
+
+@enduml
+
+@startuml
+
+class MainForm {
+    - transactions: List<Transaction>
+    - categories: List<Category>
+    - currentBalance: decimal
+    + MainForm()
+    + addTransactionButton_Click()
+    + UpdateTransactionsGridView()
+    + UpdeteCurrentBalance()
+    + newCategoryButton_Click()
+    + clearButton_Click()
+}
+
+class ManageCategoriesForm {
+    - categories: List<Category>
+    + ManageCategoriesForm(categories: List<Category>)
+    + addCategoryButton_Click()
+    + deleteCategoryButton_Click()
+}
+
+class Transaction {
+    - Description: string
+    - Amount: decimal
+    - Category: Category
+    - Type: TransactionType
+    + Transaction(description: string, amount: decimal, category: Category, type: TransactionType)
+}
+
+class Category {
+    - Name: string
+    + Category(name: string)
+}
+
+
+
+MainForm "1" *-- "1..*" Transaction
+MainForm "1" *-- "1..*" Category
+ManageCategoriesForm "1" *-- "1..*" Category
+
+@enduml
