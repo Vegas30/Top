@@ -50,7 +50,7 @@ class Category {
 
 
 MainForm "1" *-- "1..*" Transaction
-MainForm "1" *-- "1..*" Category
+MainForm "1" *-- "1..*" ManageCategoriesForm
 ManageCategoriesForm "1" *-- "1..*" Category
 
 @enduml
